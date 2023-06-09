@@ -1,0 +1,9 @@
+.main-menu{
+    display: flex;
+}
+
+.nav-item-link{
+    padding: 1em;
+    font-size: 21px;
+    color:mediumblue;
+}
