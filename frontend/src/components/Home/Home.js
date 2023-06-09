@@ -31,7 +31,7 @@ const Home = () =>{
                 {
                     todos.map(todo=>(
                         <li key={todo.id}>
-                            <h2>{todo.title}</h2>
+                            <h3>{todo.title}</h3>
                             <p>{todo.desc}</p>
                         </li>
                     ))

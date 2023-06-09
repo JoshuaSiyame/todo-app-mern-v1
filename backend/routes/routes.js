@@ -17,7 +17,7 @@ router.get("/", async (req, res)=>{
         if(todos.length === 0){
             return res.status(200).send("No todos now");
         }
-        res.status(200).json({ todos });
+        res.status(200).json(todos);
     } catch (err) {
         console.error(err);
         return res.status(500).send("Something broke.!");
@@ -34,7 +34,7 @@ router.get("/todo/:todoID", async (req, res)=>{
         if(!todo){
             return res.status(404).send("Todo not found");
         };
-        res.status(200).json({ todo });
+        res.status(200).json(todo);
     } catch (err) {
         console.error(err);
         return res.status(500).send("Something broke.!");
