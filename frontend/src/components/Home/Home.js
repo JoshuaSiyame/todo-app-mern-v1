@@ -1,5 +1,6 @@
 // import modules/packages
 import { React, useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import axios from "axios";
 import "./Home.css";
 
@@ -31,7 +32,7 @@ const Home = () =>{
                 {
                     todos.map(todo=>(
                         <li key={todo.id}>
-                            <h3>{todo.title}</h3>
+                            <Link to={"/todo/"+todo._id}><h3>{todo.title}</h3></Link>                            
                             <p>{todo.desc}</p>
                         </li>
                     ))

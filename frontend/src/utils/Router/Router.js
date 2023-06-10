@@ -8,6 +8,12 @@ const Router = () =>{
     return (
         <Routes>
             <Route exact path="/" element={ <Home /> } ></Route>
+            <Route path="/todo">
+                <Route path=":todoId" element={"coming soon"} ></Route>
+                <Route path="new-todo" element={"coming soon"} ></Route>                
+                <Route path="edit/:todoId" element={"coming soon"} ></Route>
+                <Route path="delete/:todoId" element={"coming soon"} ></Route>
+            </Route>
         </Routes>
     );
 };

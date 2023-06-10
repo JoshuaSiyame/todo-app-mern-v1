@@ -1,6 +1,6 @@
 // import modules/packages
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import "./Header.css";
 
 // header component
@@ -10,13 +10,13 @@ const Header = () =>{
             <div className="nav">
                 <ol className="main-menu">
                     <li className="nav-item">
-                        <Link to="/" className="nav-item-link">Home</Link>
+                        <NavLink to="/" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/new-todo" className="nav-item-link">New Todo</Link>
+                        <NavLink to="/new-todo" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>New Todo</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="" className="nav-item-link">+ projects</Link>
+                        <NavLink to="/projects" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>+ projects</NavLink>
                     </li>                    
                 </ol>
             </div>
