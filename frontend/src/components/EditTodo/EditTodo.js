@@ -48,7 +48,7 @@ const EditTodo = () => {
             await axios.put(`http://localhost:3000/todo/${todoId}`, todoEdit);
 
             // redirect to the todo
-            navigate(`http://localhost:5000/todo/${todoId}`);
+            navigate(<EditTodo />);
 
         } catch (error) {
             console.error(error)

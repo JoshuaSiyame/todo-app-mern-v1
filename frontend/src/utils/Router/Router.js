@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../../components/Home/Home";
 import SingleTodo from "../../components/Todo/Todo";
 import EditTodo from "../../components/EditTodo/EditTodo";
+import NewTodo from "../../components/NewTodo/NewTodo";
 
 // router component
 const Router = () =>{
@@ -12,9 +13,9 @@ const Router = () =>{
             <Route exact path="/" element={ <Home /> } ></Route>
             <Route path="/todo">
                 <Route path=":todoId" element={ <SingleTodo /> } ></Route>
-                <Route path="new-todo" element={"coming soon"} ></Route>                
+                <Route exact path="new-todo" element={ <NewTodo />} ></Route>                
                 <Route path="edit/:todoId" element={ <EditTodo /> } ></Route>
-                <Route path="delete/:todoId" element={"coming soon"} ></Route>
+                <Route path="delete/:todoId" element={ "" } ></Route>
             </Route>
         </Routes>
     );

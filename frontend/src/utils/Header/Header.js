@@ -13,7 +13,7 @@ const Header = () =>{
                         <NavLink to="/" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/new-todo" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>New Todo</NavLink>
+                        <NavLink to="/todo/new-todo" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>New Todo</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="/projects" style={({isActive})=> isActive? {color: "salmon"}: {color: "teal"}} className="nav-item-link" end>+ projects</NavLink>

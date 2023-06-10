@@ -32,6 +32,7 @@ const SingleTodo = () => {
             <small>{todo.created}</small>
             <p>{todo.desc}</p>
             <Link to={`/todo/edit/${todo._id}`}>Edit</Link>
+            <Link to={`/delete/${todo._id}`}>delete</Link>
         </div>
     );
 };
