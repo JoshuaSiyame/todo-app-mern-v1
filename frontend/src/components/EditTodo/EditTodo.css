@@ -1,0 +1,19 @@
+.form-group{
+    display: flex;
+    flex-direction: column; 
+    margin: 1em 0;   
+}
+
+.form-control{
+    width: 300px;
+    border: 1px solid lightslategrey;
+    border-radius: 2px;
+    padding: .5em 1em;
+    margin: .3em 0;
+}
+
+.btn-primary{
+    width: 300px;
+    padding: .5em 1em;
+    
+}
