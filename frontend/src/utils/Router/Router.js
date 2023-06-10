@@ -5,6 +5,7 @@ import Home from "../../components/Home/Home";
 import SingleTodo from "../../components/Todo/Todo";
 import EditTodo from "../../components/EditTodo/EditTodo";
 import NewTodo from "../../components/NewTodo/NewTodo";
+import DeleteTodo from "../../components/DeleteTodo/DeleteTodo";
 
 // router component
 const Router = () =>{
@@ -15,7 +16,7 @@ const Router = () =>{
                 <Route path=":todoId" element={ <SingleTodo /> } ></Route>
                 <Route exact path="new-todo" element={ <NewTodo />} ></Route>                
                 <Route path="edit/:todoId" element={ <EditTodo /> } ></Route>
-                <Route path="delete/:todoId" element={ "" } ></Route>
+                {/* <Route path="delete/:todoId" element={ <DeleteTodo /> } ></Route> */}
             </Route>
         </Routes>
     );

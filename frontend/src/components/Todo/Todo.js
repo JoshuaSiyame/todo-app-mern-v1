@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import DeleteTodo from "../DeleteTodo/DeleteTodo";
 
 // todo component
 const SingleTodo = () => {
@@ -32,7 +33,7 @@ const SingleTodo = () => {
             <small>{todo.created}</small>
             <p>{todo.desc}</p>
             <Link to={`/todo/edit/${todo._id}`}>Edit</Link>
-            <Link to={`/delete/${todo._id}`}>delete</Link>
+            <DeleteTodo />
         </div>
     );
 };
