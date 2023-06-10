@@ -30,8 +30,8 @@ const Home = () =>{
             <h2>Todos.</h2>
             <ul>
                 {
-                    todos.map(todo=>(
-                        <li key={todo.id}>
+                    todos.map((todo, i)=>(
+                        <li key={i}>
                             <Link to={"/todo/"+todo._id}><h3>{todo.title}</h3></Link>                            
                             <p>{todo.desc}</p>
                         </li>
