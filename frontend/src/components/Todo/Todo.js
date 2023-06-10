@@ -1,6 +1,6 @@
 // import modules/packages
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 // todo component
@@ -28,9 +28,10 @@ const SingleTodo = () => {
     return (
         <div className="main">
             <h2>Single Todo</h2>
-            <h3>{todo.title+"    -author: "+ todo.author}</h3>
+            <h3>{todo.title} <small>by:-</small> {todo.author}</h3>
             <small>{todo.created}</small>
             <p>{todo.desc}</p>
+            <Link to={`/todo/edit/${todo._id}`}>Edit</Link>
         </div>
     );
 };

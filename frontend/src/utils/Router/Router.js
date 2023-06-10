@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../../components/Home/Home";
 import SingleTodo from "../../components/Todo/Todo";
+import EditTodo from "../../components/EditTodo/EditTodo";
 
 // router component
 const Router = () =>{
@@ -12,7 +13,7 @@ const Router = () =>{
             <Route path="/todo">
                 <Route path=":todoId" element={ <SingleTodo /> } ></Route>
                 <Route path="new-todo" element={"coming soon"} ></Route>                
-                <Route path="edit/:todoId" element={"coming soon"} ></Route>
+                <Route path="edit/:todoId" element={ <EditTodo /> } ></Route>
                 <Route path="delete/:todoId" element={"coming soon"} ></Route>
             </Route>
         </Routes>
